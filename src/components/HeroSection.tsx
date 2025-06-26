@@ -48,14 +48,28 @@ const HeroSection = () => {
           </button>
         </div>
 
-        {/* Drone Placeholder */}
+        {/* 3D Interactive Drone Model */}
         <div className={`mt-16 transition-all duration-1000 delay-700 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}>
-          <div className="w-64 h-64 mx-auto bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl shadow-2xl flex items-center justify-center hover:rotate-3 transition-transform duration-300">
-            <div className="text-6xl text-gray-400">🚁</div>
+          <div style={{ maxWidth: "1200px", margin: "auto", padding: "2rem" }}>
+            <iframe
+              title="DJI Mini 3 Pro"
+              frameBorder="0"
+              allowFullScreen
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true"
+              allow="autoplay; fullscreen; xr-spatial-tracking"
+              xr-spatial-tracking="true"
+              execution-while-out-of-viewport="true"
+              execution-while-not-rendered="true"
+              web-share="true"
+              width="100%"
+              height="600"
+              style={{ borderRadius: "20px", boxShadow: "0 8px 24px rgba(0, 0, 0, 0.2)" }}
+              src="https://sketchfab.com/models/274f2ad2731e42b793b784c9f8453677/embed?autostart=1&ui_controls=0&ui_infos=0&ui_stop=0&camera=0&preload=1&autospin=0.3"
+            />
           </div>
-          <p className="text-sm text-gray-500 mt-4">3D Interactive Drone Model Coming Soon</p>
         </div>
       </div>
 
