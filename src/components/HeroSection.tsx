@@ -60,7 +60,7 @@ const HeroSection = () => {
               allow="autoplay; fullscreen; xr-spatial-tracking"
               width="100%"
               height="600"
-              style={{ borderRadius: "20px", boxShadow: "0 8px 24px rgba(0, 0, 0, 0.2)" }}
+              style={{ border: "none", background: "transparent" }}
               src="https://sketchfab.com/models/274f2ad2731e42b793b784c9f8453677/embed?autostart=1&ui_controls=0&ui_infos=0&ui_stop=0&ui_settings=0&ui_inspector=0&ui_watermark=0&ui_help=0&ui_vr=0&ui_fullscreen=0&preload=1&autospin=0.3&transparent=1"
             />
           </div>
