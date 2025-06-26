@@ -9,7 +9,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-50 to-white pt-20">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_50%)]"></div>
       
@@ -57,11 +57,17 @@ const HeroSection = () => {
               title="DJI Mini 3 Pro"
               frameBorder="0"
               allowFullScreen
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true"
               allow="autoplay; fullscreen; xr-spatial-tracking"
+              xr-spatial-tracking
+              execution-while-out-of-viewport
+              execution-while-not-rendered
+              web-share
               width="100%"
               height="600"
-              style={{ border: "none", background: "transparent" }}
-              src="https://sketchfab.com/models/274f2ad2731e42b793b784c9f8453677/embed?autostart=1&ui_controls=0&ui_infos=0&ui_stop=0&ui_settings=0&ui_inspector=0&ui_watermark=0&ui_help=0&ui_vr=0&ui_fullscreen=0&preload=1&autospin=0.3&transparent=1"
+              style={{ borderRadius: "20px", boxShadow: "0 8px 24px rgba(0, 0, 0, 0.2)" }}
+              src="https://sketchfab.com/models/274f2ad2731e42b793b784c9f8453677/embed"
             />
           </div>
         </div>
