@@ -1,8 +1,14 @@
 
 const ContactSection = () => {
+  const scrollToPricing = () => {
+    const pricingSection = document.getElementById('pricing');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-blue-900 to-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+    <section id="contact" className="py-20 bg-gradient-to-br from-indigo-700 to-indigo-950 text-white">
+      <div className="max-w-7xl mx-auto px-64 text-center">
         <h2 className="text-5xl font-bold mb-6">
           Ready to Take Flight?
         </h2>
@@ -20,22 +26,23 @@ const ContactSection = () => {
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
             <div className="text-3xl mb-4">📞</div>
             <h3 className="text-lg font-semibold mb-2">Call Us</h3>
-            <p className="text-blue-100">+1 (555) 123-DRONE</p>
+            <p className="text-blue-100">+32 472 27 68 09 </p>
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
             <div className="text-3xl mb-4">📍</div>
             <h3 className="text-lg font-semibold mb-2">Location</h3>
-            <p className="text-blue-100">Nationwide Service</p>
+            <p className="text-blue-100">Belgium, Flanders</p>
+            <p className="text-blue-100">Btw-nr: BE</p>
           </div>
         </div>
 
-        <button className="bg-white text-blue-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
+        <button onClick={scrollToPricing} className="bg-white text-blue-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
           Start Your Project
         </button>
 
         <div className="mt-16 pt-8 border-t border-white/20">
           <p className="text-blue-100">
-            © 2024 Droney. Elevating perspectives through professional drone videography.
+            © 2025 Droney. Elevating perspectives through professional drone videography.
           </p>
         </div>
       </div>

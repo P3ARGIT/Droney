@@ -1,14 +1,16 @@
 
 const MissionSection = () => {
   return (
-    <section id="mission" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="mission" className="py-20 bg-gradient-to-br 100vh from-indigo-950 to-indigo-700 text-white">
+      <div className="max-w-7xl mx-auto px-14">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gray-900 mb-6">
-            Why Only Drones?
+          <h2 className="text-5xl font-bold  mb-6">
+            Why Only <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+          Drones
+        </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+          <p className="text-xl text-gray-50 max-w-4xl mx-auto">
             Droney focuses exclusively on drone videography to deliver unmatched aerial storytelling. 
             Our specialized approach ensures agility, cost-effectiveness, and cinematic quality that 
             traditional methods simply cannot match.
@@ -46,7 +48,7 @@ const MissionSection = () => {
           </div>
 
           <div className="space-y-6">
-            <div className="bg-gradient-to-r from-gray-50 to-white p-6 rounded-xl border-l-4 border-blue-600">
+            <div className="bg-gradient-to-r from-gray-50 to-white p-6 rounded-xl border-l-4 border-green-500">
               <h4 className="text-lg font-semibold text-gray-900 mb-2">Problems We Solve</h4>
               <p className="text-gray-600">
                 Traditional video footage is often expensive and limited in scope. 
@@ -63,7 +65,7 @@ const MissionSection = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-r from-gray-50 to-white p-6 rounded-xl border-l-4 border-purple-500">
+            <div className="bg-gradient-to-r from-gray-50 to-white p-6 rounded-xl border-l-4 border-green-500">
               <h4 className="text-lg font-semibold text-gray-900 mb-2">Quality Promise</h4>
               <p className="text-gray-600">
                 Professional-grade equipment, cinematic techniques, and years of aerial 

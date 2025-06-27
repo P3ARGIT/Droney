@@ -14,16 +14,25 @@ const Navigation = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const element = document.getElementById(sectionId);
+  if (element) {
+    // Get the element's position relative to the viewport
+    const elementPosition = element.getBoundingClientRect().top;
+    // Get the current scroll position
+    const offsetPosition = elementPosition + window.pageYOffset - 100; // 100px offset
+    
+    // Scroll to the adjusted position
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+  }
+};
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? "bg-white/80 backdrop-blur-xl border-b border-gray-200/50 shadow-lg" 
+        ? "bg-white/95 backdrop-blur-l border-b border-gray-200/50 shadow-lg" 
         : "bg-transparent"
     }`}>
       <div className="max-w-7xl mx-auto px-6 py-4">
@@ -50,6 +59,12 @@ const Navigation = () => {
               className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
             >
               Services
+            </button>
+            <button 
+              onClick={() => scrollToSection("pricing")}
+              className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+            >
+              Pricing
             </button>
             <button 
               onClick={() => scrollToSection("contact")}
