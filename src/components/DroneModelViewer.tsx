@@ -14,7 +14,7 @@ const DroneModel = ({
   // Add proper type to useRef
   const modelRef = useRef<THREE.Group>(null);
   // Try using useGLTF instead of useLoader
-  const { scene } = useGLTF('/models/dji_mini_3_pro/scene.gltf');
+  const { scene } = useGLTF('./models/dji_mini_3_pro/scene.gltf');
   
   // Auto-rotate when not hovered
   useFrame((state, delta) => {
