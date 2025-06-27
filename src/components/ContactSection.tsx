@@ -21,7 +21,7 @@ const ContactSection = () => {
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
             <div className="text-3xl mb-4">📧</div>
             <h3 className="text-lg font-semibold mb-2">Email Us</h3>
-            <p className="text-blue-100">hello@droney.com</p>
+            <p className="text-blue-100">hello@droneyantwerp.com</p>
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
             <div className="text-3xl mb-4">📞</div>
