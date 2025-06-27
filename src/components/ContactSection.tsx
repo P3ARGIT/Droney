@@ -7,7 +7,7 @@ const ContactSection = () => {
     }
   };
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-indigo-700 to-indigo-950 text-white">
+    <section id="contact" className="py-20 bg-gradient-to-br height-100vh from-indigo-700 to-indigo-950 text-white">
       <div className="max-w-7xl mx-auto px-64 text-center">
         <h2 className="text-5xl font-bold mb-6">
           Ready to Take Flight?
