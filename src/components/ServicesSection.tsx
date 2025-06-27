@@ -150,16 +150,16 @@ const ServicesSection = () => {
                     <span className="text-4xl font-bold">€{plan.price}</span>
                     <span className="text-gray-600 ml-2">/project</span>
                   </div>
-                  <button 
-  onClick={() => window.location.href = `#/contact?plan=${plan.name}`}
-  className={`w-full py-3 px-4 rounded-lg font-medium transition-colors ${
+                  <Link 
+  to={`/contact?plan=${plan.name}`}
+  className={`block w-full py-3 px-4 rounded-lg font-medium text-center transition-colors ${
     plan.popular 
       ? "bg-blue-600 text-white hover:bg-blue-700"
       : "bg-white text-gray-800 border border-gray-300 hover:bg-gray-50"
   }`}
 >
   Get Started
-</button>
+</Link>
                 </div>
                 <ul className="space-y-4">
                   {plan.features.map((feature, featureIndex) => (
