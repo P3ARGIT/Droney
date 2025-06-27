@@ -1,0 +1,11 @@
+Model Information:
+* title:	Dji Mini 3 Pro
+* source:	https://sketchfab.com/3d-models/dji-mini-3-pro-274f2ad2731e42b793b784c9f8453677
+* author:	aurumjuda747 (https://sketchfab.com/aurumjuda747)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Dji Mini 3 Pro" (https://sketchfab.com/3d-models/dji-mini-3-pro-274f2ad2731e42b793b784c9f8453677) by aurumjuda747 (https://sketchfab.com/aurumjuda747) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
