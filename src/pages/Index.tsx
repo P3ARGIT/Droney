@@ -9,18 +9,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Droney - Professional Aerial Videography</title>
+        <title>Droney</title>
         
-        {/* Favicon - SVG for modern browsers */}
+        {/* Favicon setup - using the files you actually have */}
         <link rel="icon" type="image/svg+xml" href="/Droney_logo.svg" />
-        
-        {/* Fallback favicon for browsers that don't support SVG */}
-        <link rel="alternate icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        
-        {/* For iOS devices */}
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" href="/Droney_logo.png" />
+        <link rel="apple-touch-icon" href="/Droney_logo.png" />
         
         {/* Primary Meta Tags */}
         <meta name="title" content="Droney - Professional Aerial Videography" />
