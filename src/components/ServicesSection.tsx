@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
   const services = [
@@ -150,7 +151,7 @@ const ServicesSection = () => {
                     <span className="text-gray-600 ml-2">/project</span>
                   </div>
                   <button 
-  onClick={() => window.location.href = `/contact?plan=${plan.name}`}
+  onClick={() => window.location.href = `#/contact?plan=${plan.name}`}
   className={`w-full py-3 px-4 rounded-lg font-medium transition-colors ${
     plan.popular 
       ? "bg-blue-600 text-white hover:bg-blue-700"

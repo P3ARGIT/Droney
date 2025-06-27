@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ContactForm from './components/ContactForm';
 import { Hash } from "lucide-react";
+import ContactPage from "./pages/ContactPage";
 
 const queryClient = new QueryClient();
 
@@ -20,7 +21,7 @@ const App = () => (
         <HashRouter>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/contact" element={<ContactForm />} />
+            <Route path="/contact" element={<ContactPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
